@@ -239,9 +239,7 @@
                 "AssumeRolePolicyDocument": {
                     "Statement": [
                         {
-                            "Action": [
-                                "sts.AssumeRole"
-                            ],
+                            "Action": "sts:AssumeRole",
                             "Effect": "Allow",
                             "Principal": {
                                 "Service": [
@@ -252,7 +250,7 @@
                     ]
                 },
                 "ManagedPolicyArns": [
-                    "arn:aws:iam:aws:policy/service-role/AWSCodeDeployRole"
+                    "arn:aws:iam::aws:policy/service-role/AWSCodeDeployRole"
                 ]
             }
         },
@@ -329,9 +327,7 @@
                 "AssumeRolePolicyDocument": {
                     "Statement": [
                         {
-                            "Action": [
-                                "sts:AssumeRole"
-                            ],
+                            "Action": "sts:AssumeRole",
                             "Effect": "Allow",
                             "Principal": {
                                 "Service": [
